@@ -1,0 +1,16 @@
+.main {
+    background-color: aqua;
+    width: 1000px;
+}
+
+.random-sugg {
+    background-image: url('./90c804f554975bd28968b85a8642a194.jpg');
+    height: 500px;
+   
+   
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+}

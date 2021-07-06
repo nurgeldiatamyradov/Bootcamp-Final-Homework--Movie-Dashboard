@@ -1,0 +1,145 @@
+body {
+    box-sizing: border-box;
+    background-color: white;
+    
+}
+
+svg {
+    margin-top: 5px;
+    padding-right: 10px;
+
+}
+
+svg:hover {
+    fill: brown;
+}
+
+.face {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.rightSide {
+    margin-left: 10px;
+    
+    
+}
+
+.icon {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.icon__image {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+
+
+.menu {
+    margin-top: 30px;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+.menu ul li {
+    list-style-type: none;
+    margin-left: -38px;
+    margin-top: 5px;
+    padding-right: 50px;
+    border-right: 3px solid white;
+}
+
+
+.menu ul li:hover {
+    color: brown;
+    border-right-color: brown;
+}
+
+
+
+
+
+
+.library {
+    margin-top: 50px;
+}
+
+.library a {
+    text-decoration: none;
+    color: black;
+}
+
+.library ul li {
+    list-style-type: none;
+    margin-left: -38px;
+    margin-top: 5px;
+    border-right: 3px solid white;
+
+}
+
+.library ul li:hover {
+    color: brown;
+    border-right-color: brown;
+}
+
+
+
+.category {
+    margin-top: 50px;
+}
+
+.category a {
+    text-decoration: none;
+    color: black;
+}
+
+.category ul li {
+    list-style-type: none;
+    margin-left: -38px;
+    margin-top: 5px;
+    border-right: 3px solid white;
+
+}
+
+.category ul li:hover {
+    color: brown;
+    border-right-color: brown;
+}
+
+
+
+
+.general {
+    margin-top: 50px;
+}
+
+.general a {
+    text-decoration: none;
+    color: black;
+}
+
+.general ul li {
+    list-style-type: none;
+    margin-left: -38px;
+    margin-top: 5px;
+    border-right: 3px solid white;
+}
+
+.general ul li:hover {
+    color: brown;
+    border-right-color: brown;
+}
+
+
+

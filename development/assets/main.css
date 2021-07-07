@@ -1,16 +1,141 @@
 .main {
-    background-color: aqua;
-    width: 1000px;
+   
+    width: 960px;
+    border-right: lightgray 3px solid;
+
 }
 
 .random-sugg {
     background-image: url('./90c804f554975bd28968b85a8642a194.jpg');
     height: 500px;
-   
-   
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: aliceblue;
 }
+
+.random-sugg__name {
+    font-size: 80px;
+    margin-left: 15px;
+}
+
+.random-sugg__genre {
+margin-left: 15px;
+
+}
+
+.random-sugg__release {
+margin-left: 15px;
+}
+
+.random-sugg__btn {
+margin-left: 15px;
+}
+
+.random-sugg__btn button {
+}
+
+.random-sugg__watch {
+    background-color: brown;
+    color: white;
+    padding: 10px 16px;
+    font-size: 20px;
+
+}
+
+
+.random-sugg__addList {
+    background-color: white;
+    font-size: 20px;
+    padding: 8px 16px;
+
+}
+
 
 .navigation {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+
+}
+.navigation a {
+    text-decoration: none;
+}
+
+
+
+
+.nowPlaying {
+    margin-left: 40px;
+    
+}
+
+.nowPlaying__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nowPlaying__random {
+    background-image: url('./90c804f554975bd28968b85a8642a194.jpg');
+    width: 150px;
+    height: 200px;
+
+}
+
+.nowPlaying__title__btn-active { 
+    margin-top: 10px;
+}
+
+.nowPlaying__title__btn-active button {
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 0.5px solid lightgray;
+    background-color: white;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: gray;
+}
+
+.nowPlaying__title__btn-active button:hover {
+    color: white;
+    background-color: brown;
+}
+
+
+
+.topRated {
+    margin-left: 40px;
+}
+
+.topRated__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.topRated__head__btn-active {
+    margin-top: 10px;
+    color: gray;
+    
+}
+
+.topRated__head__btn-active button {
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 0.5px solid lightgray;
+    background-color: white;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: gray;
+    
+}
+
+
+.topRated__head__btn-active button:hover {
+    color: white;
+    background-color: brown;
 }

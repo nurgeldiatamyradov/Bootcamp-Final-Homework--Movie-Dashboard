@@ -66,31 +66,55 @@
         </div>
         <div class="main"> 
             <div class="navigation">
-                <a href=""><div class="navigatoin__movies">Movies</div></a>
-                <a href=""><div class="navigatoin__tvShows">TV Shows</div></a>
-                <a href=""><div class="navigatoin__anime">Anime</div></a>
+                <a href=""><div class="navigatoin__movies"><h3>Movies</h3></div></a>
+                <a href=""><div class="navigatoin__tvShows"><h3>TV Shows</h3></div></a>
+                <a href=""><div class="navigatoin__anime"><h3>Anime</h3></div></a>
             </div>
             <div class="random-sugg">
-                <div class="random-sugg__seoson">SEASON</div>
-                <div class="random-sugg__name"></div>
-                <div class="random-sugg__genre"></div>
-                <button class="random-sugg__watch">Watch Now</button>
-                <button class="random-sugg__addList">+</button>
+                <div class="random-sugg__name">Taxi Driver</div>
+                <div class="random-sugg__genre"> Comedy</div>
+                <div class="random-sugg__release">1975</div>
+
+                <div class="random-sugg__btn"><button class="random-sugg__watch">Watch Now</button>
+                    <button class="random-sugg__addList">+</button>
+                </div>
+                
             </div>
             <div class="nowPlaying">
-                <div class="nowPlaying__tittle">
+                <div class="nowPlaying__title">
                     <h3>Now Playing</h3>
-                    <button><</button><button>></button>
+                    <div class="nowPlaying__title__btn-active"><button><</button><button>></button></div>
                 </div>
-                <div class="nowPlaying__addList">
-                    <button>+</button>
-                </div>
-                <button class="nowPlaying__watch">Watch Now</button>
                 <div class="nowPlaying__random">
+                    <div class="nowPlaying__addList">
+                        <button>+</button>
+                    </div>
+                    <button class="nowPlaying__watch">Watch Now</button>
                 </div>
             </div>
+            <div class="topRated">
+                <div class="topRated__head">
+                   <h3>Top Rated Movies</h3>
+                   <div class="topRated__head__btn-active"> <button><</button><button>></button></div>
+               </div>
+               <div class="topRated__random">
+                   <p class="topRated__random__name"></p>
+                   <span class="topRated__random__release"></span>
+               </div>
+            </div> 
         </div>
-        <div class="leftSide"></div>
+        <div class="leftSide">
+            <div class="leftSide__search">
+                <input type="text" placeholder="Search..">
+            </div>
+            <div class="leftSide__popular"> <h3> Popular Movies</h3>
+                <div></div>
+                <div><button>See More</button></div>
+            </div>
+            <div class="leftSide__watchList"><h3>Watch List</h3>
+                <div><button>See More</button></div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

@@ -22,6 +22,7 @@ svg:hover {
 
 .rightSide {
     margin-left: 10px;
+    border-right: lightgray 3px solid;
     
     
 }

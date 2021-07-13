@@ -1,8 +1,6 @@
 .main {
-   
     width: 960px;
     border-right: lightgray 3px solid;
-
 }
 
 .random-sugg {
@@ -22,54 +20,44 @@
 }
 
 .random-sugg__genre {
-margin-left: 15px;
-
+    margin-left: 15px;
 }
 
 .random-sugg__release {
-margin-left: 15px;
+    margin-left: 15px;
 }
 
 .random-sugg__btn {
-margin-left: 15px;
+    margin-left: 15px;
 }
 
-.random-sugg__btn button {
-}
+.random-sugg__btn button {}
 
 .random-sugg__watch {
     background-color: brown;
     color: white;
     padding: 10px 16px;
     font-size: 20px;
-
 }
-
 
 .random-sugg__addList {
     background-color: white;
     font-size: 20px;
     padding: 8px 16px;
-
 }
-
 
 .navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
+
 .navigation a {
     text-decoration: none;
 }
 
-
-
-
 .nowPlaying {
     margin-left: 40px;
-    
 }
 
 .nowPlaying__title {
@@ -83,10 +71,9 @@ margin-left: 15px;
     background-image: url('./90c804f554975bd28968b85a8642a194.jpg');
     width: 150px;
     height: 200px;
-
 }
 
-.nowPlaying__title__btn-active { 
+.nowPlaying__title__btn-active {
     margin-top: 10px;
 }
 
@@ -105,8 +92,6 @@ margin-left: 15px;
     background-color: brown;
 }
 
-
-
 .topRated {
     margin-left: 40px;
 }
@@ -120,7 +105,6 @@ margin-left: 15px;
 .topRated__head__btn-active {
     margin-top: 10px;
     color: gray;
-    
 }
 
 .topRated__head__btn-active button {
@@ -131,11 +115,77 @@ margin-left: 15px;
     padding: 8px 12px;
     font-size: 16px;
     color: gray;
-    
 }
-
 
 .topRated__head__btn-active button:hover {
     color: white;
     background-color: brown;
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie {
+    width: 150px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+    margin-top: 0;
+}
+
+.movie-info span {
+    background-color: var(--primary-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green {
+    color: lightgreen;
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: red;
+}
+
+.overview {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview {
+    transform: translateY(0)
 }

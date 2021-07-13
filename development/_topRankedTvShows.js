@@ -27,7 +27,7 @@ function showTvShows(data) {
         <div>${summary} </div>
         `
         topRatedTvSows.appendChild(TvShowE1);
-        console.log(TvShowE1)
+        
     })
 }
 

@@ -15,7 +15,7 @@ function getTvShows(url) {
 function showTvShows(data) {
     topRatedTvSows.innerHTML = '';
     data.forEach(TvShow => {
-        const { name, image, rating, summary } = TvShow;
+        const { name, image, rating, summary, genres } = TvShow;
         const TvShowE1 = document.createElement('div');
         TvShowE1.classList.add('TvShow');
         TvShowE1.innerHTML = `
@@ -25,6 +25,7 @@ function showTvShows(data) {
         <span class="">${rating.average}</span>
         </div>
         <div>${summary} </div>
+        <div>${genres} </div>
         `
         topRatedTvSows.appendChild(TvShowE1);
         

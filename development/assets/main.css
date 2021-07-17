@@ -1,21 +1,29 @@
+body {
+    outline-color:  red ;
+}
+
 .main {
     width: 960px;
     border-right: lightgray 3px solid;
 }
 
 .random-sugg {
-    background-image: url('./90c804f554975bd28968b85a8642a194.jpg');
-    height: 500px;
+    
+    
     margin-left: 40px;
     margin-right: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     color: aliceblue;
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    height: 500px;
+    
 }
 
 .random-sugg__name {
-    font-size: 80px;
+    font-size: 50px;
     margin-left: 15px;
 }
 
@@ -25,20 +33,14 @@
 
 .random-sugg__release {
     margin-left: 15px;
+    font-size: 25px;
 }
 
-.random-sugg__btn {
-    margin-left: 15px;
-}
 
-.random-sugg__btn button {}
 
-.random-sugg__watch {
-    background-color: brown;
-    color: white;
-    padding: 10px 16px;
-    font-size: 20px;
-}
+
+
+
 
 .random-sugg__addList {
     background-color: white;
@@ -413,6 +415,11 @@ main{
       top: 15px;
       right: 35px;
     }
+
+    .random-sugg__name {
+        font-size: 25px;
+    }
+
   }
 
 

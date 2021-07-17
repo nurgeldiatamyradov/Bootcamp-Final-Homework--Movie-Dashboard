@@ -1,14 +1,19 @@
-console.log("mal")
+
 
 const API_URL = 'https://api.tvmaze.com/shows';
 
 const topRatedTvSows = document.getElementById('topRatedTvShow');
 
+const randomSugg = document.getElementById('random-sugg');
+
+
 getTvShows(API_URL);
 
 function getTvShows(url) {
     fetch(url).then(res => res.json()).then(data => {
-        showTvShows(data)
+        showTvShows(data);
+
+        randomSuggs(data);
     })
 }
 
@@ -32,12 +37,25 @@ function showTvShows(data) {
     })
 }
 
-/*function getColor(vote_average) {
-if (vote_average >= 8) {
-    return 'green'
-} else if (vote_average >= 5) {
-    return 'orange'
-} else {
-    return 'red'
-}
-}*/
+function randomSuggs(data) {
+    randomSuggs.innerHTML = '';
+    //let num = Math.floor(Math.randoma() * 100)
+   let random = data[7];
+      function suggestion(random) {
+        let {name, image, premiered} = random;
+        let randomEl = document.createElement('div');
+        randomEl.classList.add('random-sugg')
+      randomEl.style.backgroundImage = 'url("'+ image.original+ '")';
+      
+      randomEl.innerHTML = `
+      
+      <h3 class="random-sugg__name">${name}</h3>
+  
+      <span class="random-sugg__release">${premiered}
+      `
+  
+      randomSugg.append(randomEl)
+      }
+      suggestion(random)
+      
+  }

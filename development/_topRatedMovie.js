@@ -90,7 +90,7 @@ const form =  document.getElementById('form');
 const search = document.getElementById('search');
 const tagsEl = document.getElementById('tags');
 
-const randomSugg = document.getElementsById('random-sugg');
+const randomSugg = document.getElementById('random-sugg');
 
 
 const prev = document.getElementById('prev');
@@ -177,6 +177,10 @@ function getMovies(url) {
         console.log(data.results)
         if(data.results.length !== 0){
             showMovies(data.results);
+
+            
+            randomSuggs(data.results);
+
             currentPage = data.page;
             nextPage = currentPage + 1;
             prevPage = currentPage - 1;
@@ -205,20 +209,32 @@ function getMovies(url) {
 
 }
 
-var images = [
-  'awards.svg',
-  'clocks.svg'
-];
 
+//--------------------------------------------------------------------------
+function randomSuggs(data) {
+  randomSuggs.innerHTML = '';
+  //let num = Math.floor(Math.randoma() * 100)
+ let random = data[7];
+    function suggestion(random) {
+      let {title, backdrop_path, release_date} = random;
+    let randomEl = document.createElement('div');
+    randomEl.classList.add('random-sugg')
+    randomEl.style.backgroundImage = 'url("'+ IMG_URL+backdrop_path+ '")';
+    debugger
+    randomEl.innerHTML = `
+    
+    <h3 class="random-sugg__name">${title}</h3>
 
-function randomSuggs(sum) {
-  let sum = Math.floor(Math.random() * 2);
-  randomSugg.style.backgroundImage = 'url("' + images[sum] + '")';
-  randomSugg.style.backgroundRepeat = "no-repeat";
-} 
+    <span class="random-sugg__release">${release_date}
+    `
 
-randomSuggs();
+    randomSugg.append(randomEl)
+    }
+    suggestion(random)
+    
+}
 
+//---------------------------------------------------------------------------
 
 function showMovies(data) {
     main.innerHTML = '';

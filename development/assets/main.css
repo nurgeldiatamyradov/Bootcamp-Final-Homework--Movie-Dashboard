@@ -1,5 +1,9 @@
 body {
     outline-color:  red ;
+
+    
+
+    
 }
 
 .main {
@@ -130,6 +134,10 @@ body {
     justify-content: center;
 }
 
+.rightSide {
+    width: 10%;
+}
+
 .movie {
     width: 150px;
     margin: 1rem;
@@ -236,7 +244,7 @@ main{
 }
 
 .movie {
-    width: 300px;
+    width: 200px;
     margin: 1rem;
     border-radius: 3px;
     box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
@@ -245,6 +253,10 @@ main{
     overflow: hidden;
 }
 
+.tvShow-info {
+    display: flex;
+    flex-direction: row;
+}
 
 .movie img{
     width:100%;
@@ -474,3 +486,8 @@ main{
 #prev {
     color: black;
 }
+
+
+
+
+

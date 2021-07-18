@@ -2,9 +2,14 @@
 
 const API_URL = 'https://api.tvmaze.com/shows';
 
+const search_URL = 'https://api.tvmaze.com/search/shows'
+
 const topRatedTvSows = document.getElementById('topRatedTvShow');
 
 const randomSugg = document.getElementById('random-sugg');
+
+const form =  document.getElementById('form');
+const search = document.getElementById('search');
 
 
 getTvShows(API_URL);
@@ -22,10 +27,10 @@ function showTvShows(data) {
     data.forEach(TvShow => {
         const { name, image, rating, summary, genres } = TvShow;
         const TvShowE1 = document.createElement('div');
-        TvShowE1.classList.add('TvShow');
+        TvShowE1.classList.add('movie');
         TvShowE1.innerHTML = `
         <img src="${image.medium}" alt="${name}">
-        <div class="TvSow-info">
+        <div class="tvShow-info">
         <h3>${name}</h3>
         <span class="">${rating.average}</span>
         </div>
@@ -40,9 +45,9 @@ function showTvShows(data) {
 function randomSuggs(data) {
     randomSuggs.innerHTML = '';
     //let num = Math.floor(Math.randoma() * 100)
-   let random = data[7];
+   let random = data[10];
       function suggestion(random) {
-        let {name, image, premiered} = random;
+        let {name, image, premiered, genres} = random;
         let randomEl = document.createElement('div');
         randomEl.classList.add('random-sugg')
       randomEl.style.backgroundImage = 'url("'+ image.original+ '")';
@@ -51,7 +56,11 @@ function randomSuggs(data) {
       
       <h3 class="random-sugg__name">${name}</h3>
   
-      <span class="random-sugg__release">${premiered}
+      <span class="random-sugg__release">Release Date: ${premiered}</span>
+
+      <span> ${genres} </span>
+
+
       `
   
       randomSugg.append(randomEl)
@@ -59,3 +68,15 @@ function randomSuggs(data) {
       suggestion(random)
       
   }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const searchTerm = search.value;
+    
+    
+    if(searchTerm) {
+        getTvShows(search_URL+'?q=${query}'+searchTerm)
+    }
+
+})

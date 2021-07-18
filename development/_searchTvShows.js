@@ -1,7 +1,7 @@
-console.log("chotgo");
+
 
 function searchShow(query) {
-    const url =`https://api.tvmaze.com/search/shows?q=${query}`;
+    const url ='https://api.tvmaze.com/search/shows?q=${query}';
     fetch(url).then(response => response.json())
     .then((jsonData) => {
         const results = jsonData.map(element => element.show.name);

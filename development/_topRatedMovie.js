@@ -220,7 +220,7 @@ function randomSuggs(data) {
     let randomEl = document.createElement('div');
     randomEl.classList.add('random-sugg')
     randomEl.style.backgroundImage = 'url("'+ IMG_URL+backdrop_path+ '")';
-    debugger
+    
     randomEl.innerHTML = `
     
     <h3 class="random-sugg__name">${title}</h3>
@@ -425,3 +425,4 @@ function pageCall(page){
     getMovies(url);
   }
 }
+

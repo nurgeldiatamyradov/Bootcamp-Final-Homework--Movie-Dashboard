@@ -214,7 +214,7 @@ function getMovies(url) {
 function randomSuggs(data) {
   randomSuggs.innerHTML = '';
   //let num = Math.floor(Math.randoma() * 100)
- let random = data[7];
+ let random = data[8];
     function suggestion(random) {
       let {title, backdrop_path, release_date} = random;
     let randomEl = document.createElement('div');

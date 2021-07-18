@@ -227,7 +227,7 @@ main{
 }
 
 .movie {
-    width: 300px;
+    width: 200px;
     margin: 1rem;
     border-radius: 3px;
     box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);

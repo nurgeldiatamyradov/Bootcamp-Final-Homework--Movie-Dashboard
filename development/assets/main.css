@@ -73,11 +73,7 @@ body {
     margin-top: 20px;
 }
 
-.nowPlaying__random {
-    background-image: url('./90c804f554975bd28968b85a8642a194.jpg');
-    width: 150px;
-    height: 200px;
-}
+
 
 .nowPlaying__title__btn-active {
     margin-top: 10px;
@@ -113,20 +109,7 @@ body {
     color: gray;
 }
 
-.topRated__head__btn-active button {
-    margin-right: 10px;
-    border-radius: 50%;
-    border: 0.5px solid lightgray;
-    background-color: white;
-    padding: 8px 12px;
-    font-size: 16px;
-    color: gray;
-}
 
-.topRated__head__btn-active button:hover {
-    color: white;
-    background-color: brown;
-}
 
 #main {
     display: flex;
@@ -244,7 +227,7 @@ main{
 }
 
 .movie {
-    width: 200px;
+    width: 300px;
     margin: 1rem;
     border-radius: 3px;
     box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);

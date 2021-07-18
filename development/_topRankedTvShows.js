@@ -32,7 +32,7 @@ function showTvShows(data) {
         <img src="${image.medium}" alt="${name}">
         <div class="tvShow-info">
         <h3>${name}</h3>
-        <span class="">${rating.average}</span>
+        <div><span class="">${rating.average}</span></div>
         </div>
         <div>${summary} </div>
         <div>${genres} </div>

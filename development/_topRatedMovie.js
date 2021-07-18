@@ -225,7 +225,7 @@ function randomSuggs(data) {
     
     <h3 class="random-sugg__name">${title}</h3>
 
-    <span class="random-sugg__release">${release_date}
+    <span class="random-sugg__release"> Release Date: ${release_date} </span>
     `
 
     randomSugg.append(randomEl)
